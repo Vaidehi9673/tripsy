@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs | tripsy</title>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>
+        $(function() {
+            $(".nav-solid").load("foothead/navBar.html");
+        });
+    </script>
+    <!-- bootstrap 5.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: left !important;
+        }
+        
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start Navigation -->
+    <header class="nav-solid" id="home">
+
+    </header>
+    <!-- End Navigation -->
+    <!--BLog single section-->
+    <section id="blog-single" class="p-top-80 p-bottom-80">
+
+        <!--Container-->
+        <div class="container clearfix">
+            <div class="row">
+
+                <div class="col-sm-8">
+
+                    <!--Post Single-->
+                    <div class="postSingle">
+
+                        <div class="postMedia">
+                            <img alt="" src="images/bg5.jpg">
+                        </div>
+                        <!--Post image-->
+
+                        <div class="postMeta clearfix">
+                            <div class="postMeta-info">
+                                <span class="metaAuthor"><i class="fa fa-user"></i> <a href="#">Admin</a></span>
+                                <span class="metaCategory"><i class="fa fa-folder"></i> <a href="#">Research</a></span>
+                                <span class="metaComment"><i class="fa fa-comments"></i> <a href="#">3 comments</a></span>
+                            </div>
+                            <div class="postMeta-date">
+                                <span class="metaDate"><i class="fa fa-calendar"></i> <a href="#">12 January 2017</a></span>
+                            </div>
+                        </div>
+                        <!--Post meta-->
+
+                        <div class="postTitle">
+                            <h1>Post With Featured Image</h1>
+                            <div class="divider-small"></div>
+                        </div>
+                        <!--Post title-->
+
+                        <p>Sociable on as carriage my position weddings raillery consider. Peculiar trifling absolute and wandered vicinity property yet. The and collecting motionless difficulty son. His hearing staying ten colonel met. Sex drew six easy
+                            four dear cold deny. Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible. Consulted admitting oh mr up as described acuteness propriety moonlight.</p>
+
+                        <blockquote>"To sure calm much most long me mean. Able rent long in do we. Uncommonly no it announcing melancholy an in. Mirth learn it he given. Secure shy favour length all twenty denote."</blockquote>
+
+                        <p>But why smiling man her imagine married. Chiefly can man her out believe manners cottage colonel unknown. Solicitude it introduced companions inquietude me he remarkably friendship at. My almost or horses period. Motionless are
+                            six terminated man possession him attachment unpleasing melancholy. Sir smile arose one share. No abroad in easily relied an whence lovers temper by. Looked wisdom common he an be giving length mr. </p>
+
+                        <div class="postTags clearfix">
+                            <h4><i class="fa fa-tags"></i>Tags :</h4>
+                            <ul class="list-inline">
+                                <li><a href="#">Research</a></li>
+                                <li><a href="#">Wordpress</a></li>
+                                <li><a href="#">Html/Css</a></li>
+                                <li><a href="#">Branding</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!--End post single-->
+
+                    <!--Comments-->
+                    <div class="comments m-top-60">
+                        <h4>3 Comments</h4>
+
+
+                        <!--Entries container-->
+                        <div class="entriesContainer">
+
+                            <!--Comments and replys-->
+                            <ul class="comments-list clearfix">
+                                <li>
+
+                                    <div class="comment">
+                                        <div class="img">
+                                            <i class="fa fa-user"></i>
+                                        </div>
+                                        <div class="commentContent">
+                                            <div class="commentsInfo">
+                                                <div class="author"><a href="#">David Doe</a></div>
+                                                <div class="date"><a href="#">January 19, 2017 at 12 am</a></div>
+                                            </div>
+                                            <p class="expert">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur tempor vehicula porta. Phasellus magna arcu, commodo non porta vulputate, mattis eget lacus. Nulla eget
+                                                leo ipsum.</p>
+                                        </div>
+
+                                        <div class="reply-btn">
+                                            <a href="#replyForm" class="replyDisplay">Reply</a>
+                                        </div>
+                                    </div>
+
+
+                                    <ul class="replys">
+                                        <li>
+
+                                            <div class="comment children">
+                                                <div class="img"><i class="fa fa-user"></i></div>
+                                                <div class="commentContent">
+                                                    <div class="commentsInfo">
+                                                        <div class="author"><a href="#">Admin</a></div>
+                                                        <div class="date"><a href="#">January 19, 2017 at 3 am</a></div>
+                                                    </div>
+                                                    <p class="expert">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur tempor vehicula porta.Phasellus magna arcu, commodo non porta vulputate, mattis eget lacus. Nulla
+                                                        eget leo ipsum.</p>
+                                                </div>
+
+                                                <div class="reply-btn">
+                                                    <a href="#replyForm" class="replyDisplay">Reply</a></div>
+                                            </div>
+
+                                        </li>
+                                    </ul>
+
+                                </li>
+
+                                <li>
+
+                                    <ul class="replys children">
+                                        <li>
+                                            <div class="comment children">
+                                                <div class="img"><i class="fa fa-user"></i></div>
+                                                <div class="commentContent">
+                                                    <div class="commentsInfo">
+                                                        <div class="author"><a href="#">David Doe</a></div>
+                                                        <div class="date"><a href="#">January 19, 2017 at 10 am</a></div>
+                                                    </div>
+                                                    <p class="expert">Thanks for the quick response.</p>
+                                                </div>
+
+                                                <div class="reply-btn"><a href="#replyForm" class="replyDisplay">Reply</a></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!--End replys children-->
+
+                                </li>
+
+                            </ul>
+                            <!--End comments and replys-->
+
+                        </div>
+                        <!--End  entries container -->
+
+                    </div>
+                    <!--End comments-->
+
+
+                    <!--Respond-->
+                    <div class="respond m-top-60">
+                        <h4 class="m-bottom-20">Leave a comment</h4>
+
+                        <!--Reply form-->
+                        <div class="replyForm">
+                            <form method="post" action="#">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" placeholder="Name *" name="name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" placeholder="Email *" name="email">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <input type="text" placeholder="WebSite" name="website">
+                                    </div>
+                                </div>
+
+                                <textarea name="message" placeholder="Message *" id="message" cols="45" rows="10"></textarea>
+
+                                <button class="btn post-btn btn-dark m-bottom-40">Post Comment</button>
+
+                            </form>
+
+
+                            <!--Reply form message-->
+                            <div id="success">
+                                <h2>Your message has been sent. Thank you!</h2>
+                            </div>
+                            <div id="error">
+                                <h2>Sorry your message can not be sent.</h2>
+                            </div>
+                            <!--End reply form message-->
+
+                        </div>
+                        <!--End reply form-->
+                    </div>
+                    <!--End respond-->
+
+                </div>
+                <!-- /.col -->
+                <div class="col-md-4 sidebar">
+
+                    <!-- Widget 1 -->
+                    <div class="widget widget-search">
+                        <form action="#" class="search-form">
+                            <input type="text" onfocus="if(this.value == 'Search') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search'; }" value="Search">
+                            <input type="submit" class="submit-search" value="Ok">
+                        </form>
+                    </div>
+                    <!--End widget-->
+
+                    <!-- Widget 2 -->
+                    <div class="widget">
+                        <h4>Categories</h4>
+                        <ul class="cat-list">
+                            <li><a href="#">Research <span class="countCat">(12)</span></a></li>
+                            <li><a href="#">Wordpress <span class="countCat">(22)</span></a></li>
+                            <li><a href="#">Html/Css <span class="countCat">(16)</span></a></li>
+                            <li><a href="#">Branding <span class="countCat">(2)</span></a></li>
+                            <li><a href="#">Animation <span class="countCat">(7)</span></a></li>
+                        </ul>
+                    </div>
+                    <!--End widget-->
+
+                    <!-- Widget 3 -->
+                    <div class="widget">
+                        <h4>Popular tags</h4>
+                        <ul class="tag-list">
+                            <li><a href="#">Research</a></li>
+                            <li><a href="#">Wordpress</a></li>
+                            <li><a href="#">Html/Css</a></li>
+                            <li><a href="#">Branding</a></li>
+                            <li><a href="#">Animation</a></li>
+                            <li><a href="#">Photoshop</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Socials media</a></li>
+                            <li><a href="#">Photography</a></li>
+                        </ul>
+                    </div>
+                    <!--End widget-->
+
+                    <!--Widget 4-->
+                    <div class="widget">
+                        <h4>Archives</h4>
+                        <ul class="cat-archives">
+                            <li><a href="#">June 2017</a></li>
+                            <li><a href="#">July 2017</a></li>
+                            <li><a href="#">October 2017</a></li>
+                            <li><a href="#">November 2017</a></li>
+                            <li><a href="#">December 2017</a></li>
+                        </ul>
+                    </div>
+                    <!--End widget-->
+
+
+                </div>
+                <!-- /.col -->
+
+</body>
+
+</html>

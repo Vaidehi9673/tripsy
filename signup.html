@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tripsy-SignUp Page</title>
+    <!-- bootstrap 5.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- gfonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Open+Sans+Condensed:wght@300&family=Montserrat:wght@800&family=Charm:wght@700&family=Roboto:wght@100;300&family=Sacramento&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+
+    <!-- external css -->
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+
+<body onload="sliding();">
+    <div class="navbar">
+        <div class="navbar-brand">
+            <h1>tripsy</h1>
+        </div>
+
+        <button class="btn float-end mx-5 darkMode-btn">Dark Mode</button>
+    </div>
+    <form action="#">
+        <div class="container-fluid" id="animating">
+            <div class="row">
+                <h6>Signup with </h6>
+                <div class="col-lg-3 btn">Google</div>
+                <div class="col-lg-3 btn">Facebook</div>
+            </div>
+            <hr>
+
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" class="col-lg-2 fname" placeholder="John" required>
+                <label for="lname">Last Name</label>
+                <input type="text" class="col-lg-2 lname" placeholder="Doe" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" class="email" value=" " placeholder="johndoe@gmail.com" required>
+            </div>
+            <div>
+                <label for="pwd">Password</label>
+                <input type="password" class="pwd" placeholder="Abcd@1234" required>
+            </div>
+            <div>
+                <label for="confirmPwd">Confirm Password</label>
+                <input type="password" class="confirmPwd" placeholder="Your Password" required>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 showCaptchaDiv">
+                    <input type="text" class="showCaptchaCode" value="245abd" readonly>
+                </div>
+                <button type="button" class="col-lg-2 btn btn-warning captcha-btn">Generate CAPTCHA</button>
+            </div>
+            <div>
+                <input type="text" class="Captcha" placeholder="Enter Captcha" required>
+            </div>
+            <div>
+                <input type="checkbox" name="checkIfRobot" id="checkRobo" required> I am not a robot.
+            </div>
+            <div>
+                <input type="checkbox" name="checkPolicy" id="checkTnC" required> I agree to proposed <a href="conditions.html"> Terms & Conditions </a>and have read <a href="conditions.html">Privacy Policy</a.
+            </div>
+
+            <button type="button" class="btn continue" value="Continue">Continue</button>
+
+            <div style="text-align: center;">
+                <hr>
+                <h6>T&C Applied</h6>
+            </div>
+        </div>
+    </form>
+    <hr>
+
+
+<!-- 
+    <div class="col-lg-2">
+        <button class="btn info-btn btn-primary">Info</button>
+    <p class="info-desc">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente modi itaque dicta!
+    </p>
+    </div> -->
+
+
+    <!-- jquery plugin -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- external js -->
+    <script src="js/signup.js"></script>
+</body>
+
+</html>

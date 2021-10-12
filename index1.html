@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripsAway</title>
+    <!-- bootstrap 5.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- jquery plugin -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+    <!-- gfonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Charm:wght@700&family=Montserrat:wght@800&family=Roboto:wght@100;300&family=Sacramento&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body onload="animating();">
+    <section id="title">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid mx-4">
+                <div class="navbar-brand">tripsy</div>
+
+
+                <span type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>
+                        <div class="btn" style="color: black;">Menu</div>
+                    </span>
+                </span>
+
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav" id="navnav">
+
+                        <li class="nav-item" onclick="changeTheme();">
+                            <a class="nav-link active" href="#">Theme</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Destination</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btnL btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                Login
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btnS btn-dark" data-bs-toggle="modal" data-bs-target="#signupModal">
+                                Signup
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="imgCaption img1">
+            <h1>Feel Alive</h1>
+            <p>let's Wander where the Wifi is weak...</p>
+            <button class="btn btn-md btn-outline-light">
+                Explore With Us
+            </button>
+        </div>
+        <img src="images/bg2.jpg" class="img-featured d-block w-100" alt="..." height="700px">
+        </div>
+        </div>
+
+
+    </section>
+
+
+    <section id="section1">
+        <div class="container-fluid imgRow">
+
+            <h1>SEARCH BY TYPE</h1>
+            <p>
+                Possimus ducimus nulla saepe soluta tenetur, rem , veritatis aliquam aspernatur fuga!
+            </p>
+            <div class="row d-flex w-100 m-auto">
+                <div class="col col-lg-3">
+                    <div class="imgType">
+                        <img src="images/bg1.jpg" alt="">
+
+                        <h3 class="trigger-desc">Destination</h3>
+                        <p class="hide-desc">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero fuga, aliquid atque tempore voluptas accusantium obcaecati. Rerum sunt voluptate, sequi ducimus vero officia itaque exercitationem.
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-lg-3">
+                    <div class="imgType">
+                        <img src="images/bg2.jpg" alt="">
+
+                        <h3 class="trigger-desc">Destination</h3>
+                        <p class="hide-desc">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero fuga, aliquid atque tempore voluptas accusantium obcaecati. Rerum sunt voluptate, sequi ducimus vero officia itaque exercitationem.
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-lg-">
+                    <div class="imgType">
+                        <img src="images/bg4.jpg" alt="">
+
+                        <h3 class="trigger-desc">Destination</h3>
+                        <p class="hide-desc">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero fuga, aliquid atque tempore voluptas accusantium obcaecati. Rerum sunt voluptate, sequi ducimus vero officia itaque exercitationem.
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-md-2">
+                    <div class="imgType">
+                        <img src="images/bg3.jpg" alt="">
+
+                        <h3 class="trigger-desc">Destination</h3>
+                        <p class="hide-desc">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero fuga, aliquid atque tempore voluptas accusantium obcaecati. Rerum sunt voluptate, sequi ducimus vero officia itaque exercitationem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="newsletter container-fluid">
+            <h3>SUBSCRIBE TO OUR NEWSLETTER!</h3>
+            <p>Stay updated for latest offers and discounts!</p>
+            <input type="submit" class="btn subscribe btn-lg btn-outline-warning" value="SUBSCRIBE" />
+        </div>
+        <div class="container-fluid promo-holder">
+            <h1>Promotional Trips</h1>
+            <h3>CONGRATULATIONS! Seeing how far you came, here are some promotional trips for you!</h3>
+            <div class="row d-flex promotional">
+                <div class="col col-lg-3 m-auto col-md-2 promo-trips">
+                    <h4>PROMOTIONAL TRIPS</h4>
+                </div>
+                <div class="col col-lg-3 m-auto col-md-2 promo-trips">
+                    <h4>PROMOTIONAL TRIPS</h4>
+                </div>
+                <div class="col col-lg-3 m-auto col-md-2 promo-trips">
+                    <h4>PROMOTIONAL TRIPS</h4>
+                </div>
+                <div class="col col-lg-3 m-auto col-md-2 promo-trips">
+                    <h4>PROMOTIONAL TRIPS</h4>
+                </div>
+                <div class="col col-lg-3 m-auto col-md-2 promo-trips">
+                    <h4>PROMOTIONAL TRIPS</h4>
+                </div>
+                <div class="col col-lg-3 m-auto col-md-2 promo-trips">
+                    <h4>PROMOTIONAL TRIPS</h4>
+                </div>
+                <div class="col col-lg-3 m-auto col-md-2 promo-trips">
+                    <h4>PROMOTIONAL TRIPS</h4>
+                </div>
+                <div class="col col-lg-3 m-auto col-md-2 promo-trips">
+                    <h4>PROMOTIONAL TRIPS</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row m-auto">
+            <div class="col col-lg-3 col-md-2">
+                Recommendations
+            </div>
+            <div class="col col-lg-3 col-md-2">
+                Ratings & Reviews
+            </div>
+
+            <div class="col col-lg-3 col-md-2">
+                Privacy Policy
+            </div>
+            <div class="col col-lg-3 col-md-2">
+                T&C Applied
+            </div>
+        </div>
+    </footer>
+
+    <!-- login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="loginModalLabel">Login to continue...</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-floating mb-1">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-primary py-2 col-12">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="signupModalLabel">Signup & join us today!</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <div class="row g-3">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            </div>
+
+                        </div>
+                        <div class="input-group mb-3 my-4">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Contact No.</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your phone or landline no.">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="abcd$1324">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Enter password again...">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Back</button> -->
+                    <button type="button" class="btn btn-primary col-12 py-2">Signup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
